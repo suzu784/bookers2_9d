@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get "home/about"=>"homes#about", as: "about"
   
   #変更しました
+  #2回目の変更だぞ
   
   resources :users, only: [:index,:show,:edit,:update] do
     resource :relationships, only: [:create, :destroy]
