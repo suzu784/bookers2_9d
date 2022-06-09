@@ -9,6 +9,12 @@ Rails.application.routes.draw do
   
   機能を変更します
   
+  
+  aaaaa
+  
+  fvgabvabva
+  
+  
   resources :users, only: [:index,:show,:edit,:update] do
     resource :relationships, only: [:create, :destroy]
     get 'followings' => 'relationships#followings', as: 'followings'
