@@ -7,13 +7,7 @@ Rails.application.routes.draw do
   root to: "homes#top"
   get "home/about"=>"homes#about", as: "about"
   
-  機能を変更します
-  
-  
-  aaaaa
-  
-  fvgabvabva
-  
+
   
   resources :users, only: [:index,:show,:edit,:update] do
     resource :relationships, only: [:create, :destroy]
