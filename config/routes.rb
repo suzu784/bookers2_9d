@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   root to: "homes#top"
   get "home/about"=>"homes#about", as: "about"
   
+
+  
   resources :users, only: [:index,:show,:edit,:update] do
     resource :relationships, only: [:create, :destroy]
     get 'followings' => 'relationships#followings', as: 'followings'
